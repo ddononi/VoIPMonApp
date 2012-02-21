@@ -1,0 +1,103 @@
+/* body 공통 속성 */
+body,div,ul,li,dl,dt,dd,ol,p,h1,h2,h3,h4,h5,h6,form {margin:0;padding:0}
+body {font:normal dotum,'돋움체';font-size:12px;color:#747474;font-family:"돋움", AppleGothic, sans-serif; }
+
+ul,ol,dl {list-style:none}
+img {border:0;vertical-align:middle;}
+ul {list-style:none; padding:0; margin:0;}
+a{text-decoration:none;}
+
+html{height:100%;overflow-y:scroll;}
+body{background:url(../images/bg.gif) repeat-x;height:100%;width:100%;}
+#wrapper {margin:0 auto;height:100%;}
+#wrapper #header{overflow:hidden;text-align:center;}
+#wrapper #header .gnb{width:778px;height:43px;margin:0 auto;}
+#wrapper #header .gnb h1{width:122px;float:left}
+#wrapper #header .gnb .gnbMenu{width:50%;float:right;margin-top:10px;text-align:right;}
+#wrapper #header .gnb .gnbMenu span a{background:}
+#wrapper #header .lnb{width:100%;clear:both;height:39px;}
+#wrapper #header .lnb .lnbMenu{width:778px;height:39px;margin:0 auto;text-align:left;}
+#wrapper #header .lnb .lnbMenu li{float:left;width:100px;text-align:center;}
+#wrapper #header .lnb .lnbMenu li a{color:#fff;display:block;height:39px;line-height:39px;font-size:12px; background:url(../images/lnbMenuLine.gif) no-repeat right 50%;font-weight:bold;}
+#wrapper #header .lnb .lnbMenu li a:hover{color:#f4b230;font-weight:bold;}
+
+#wrapper #container {min-height:100%;height:100%;}
+#wrapper #container .content01{width:100%;height:91px;background:#f2f2f2;border-top:1px solid #dadde0;border-bottom:1px solid #dadde0;}
+#wrapper #container .content01 .content01Menu{width:778px;height:39px;margin:0 auto;text-align:left;}
+#wrapper #container .content01 .content01Menu .systemBox01{position:relative;background:url(../images/systemBox01.gif) no-repeat;width:387px;height:91px;float:left;border-left:1px solid #dadde0;border-right:1px solid #dadde0}
+#wrapper #container .content01 .content01Menu .systemBox01 ul ,.systemBox02 ul{position:absolute;right:30px;top:10px;}
+#wrapper #container .content01 .content01Menu .systemBox01 ul li,.systemBox02 ul li{line-height:19px;font-weight:bold;width:30px;text-align:right;}
+#wrapper #container .content01 .content01Menu .systemBox02{position:relative;background:url(../images/systemBox02.gif) no-repeat;width:387px;height:91px;float:left;border-right:1px solid #dadde0}
+#wrapper #container .content02{width:778px;height:100%;margin:0 auto;text-align:center;margin-top:30px;}
+#wrapper #container .ipBox01{width:225px;height:35px;background:url(../images/ipBox01.gif) no-repeat;margin:0 auto;margin-bottom:10px;}
+#wrapper #container .ipBox02{width:225px;height:35px;background:url(../images/ipBox02.gif) no-repeat;margin:0 auto;margin-bottom:10px;}
+#wrapper #container .ipBox01 span , .ipBox02 span {padding:10px 0 0 130px;display:block ;}
+
+#wrapper #container .content02 table{width:100%;margin-bottom:30px}
+#wrapper #container .content02 table td{padding:10px;}
+
+#wrapper #container .content03{width:778px;margin:0 auto;}
+
+
+#wrapper  #footer {width:100%; height:50px;line-height:50px;border-top:1px solid #C6C6C6;background:#f2f2f2;text-align:center;font-size:11px;}
+
+/*폰트색상*/
+.colorR{color:#cc0000}
+.colorY{color:#fca316}
+.colorW{color:#ccc}
+.colorG{color:#666666}
+
+/*아이콘색상*/
+.icR{width:22px;height:22px;line-height:25px;text-align:center;background:url(../images/icR.gif) no-repeat;display:block;color:#fff;}
+.icY{width:22px;height:22px;line-height:25px;text-align:center;background:url(../images/icY.gif) no-repeat;display:block;color:#666666;}
+.icW{width:22px;height:22px;line-height:25px;text-align:center;background:url(../images/icW.gif) no-repeat;display:block;color:#666666;}
+.icG{width:22px;height:22px;line-height:25px;text-align:center;background:url(../images/icG.gif) no-repeat;display:block;color:#fff;}
+
+/*테이블*/
+.table01{width:778px;border-top:2px solid #5a5653;border-bottom:1px solid #d7d7d7; line-height:150%;margin-bottom:30px}
+.table01 th,.table01 td{border-bottom:1px solid #d7d7d7;padding:5px 5px 5px 10px; text-align:left;}
+.table01 th{background:#f4f4f4;}
+.table01 td{background:#fff;}
+
+
+.table02{width:100%;margin-bottom:20px;border-top:1px solid #85827f;}
+.table02 thead th{border-bottom:1px solid #85827f;}
+.table02 th,.table02 td{border-left:1px solid #d7d7d7;border-bottom:1px solid #d7d7d7;padding:7px; text-align:center;}
+.table02 th{background:#f4f4f4;}
+.table02 td{background:#fff;}
+.table02 .first{border-left:0}
+.table02 td.bg{background:#eaeaea;}	
+/* f9f9f9 */
+
+.paging{width:100%;  font-size:12px; text-align:center;}
+.paging a img{padding-bottom:1px;}
+
+.paging span{padding:0 5px}
+.paging span a{display:block;display:inline;height:17px;line-height:17px;color:#666666;}
+.paging span a.on{font-weight:bold;color:#cc6600;}
+
+
+/*버튼*/
+
+.btn_listen{width:17px;height:17px;background:url(../images/btn_listen.gif) no-repeat;display:block;text-indent:-1000em;margin:0 auto;}
+.btn_down{width:17px;height:17px;background:url(../images/btn_down.gif) no-repeat;display:block;text-indent:-1000em;margin:0 auto;}
+.btn01{width:73px;height:23px;background:url(../images/btn.gif)no-repeat;border:none;color:#fff;font-weight:bold;margin:0 2px 0}
+
+/*정렬*/
+.alignL{text-align:left;}
+.alignC{text-align:center;}
+.alignR{text-align:right;}
+
+
+
+/*팝업캘린더*/
+.pCalendar{width:210px;height:183px;padding:4px;background:#fff;clear:both;border:4px solid #dfdddb;}
+.pCalendar .popup_calendar_box{background:#fff;margin:8px;}
+.pCalendar .popup_calendar_box .title{text-align:center;line-height:21px;width:100%}
+.pCalendar .popup_calendar_box .search_month{background:#e9e9e9;height:21px;line-height:21px;text-align:center;font-weight:bold;color:#8f8b89; letter-spacing:1px;margin-bottom:3px;}
+.pCalendar .popup_calendar_box .search_month img{padding-right:7px}
+.pCalendar .popup_calendar_box .view_month table.table_calendar{width:100%;background:#b3b1af;}
+.pCalendar .popup_calendar_box .view_month table.table_calendar th{color:#fff;background:url(../images/calendar_month_bgL_line.gif)no-repeat left;}
+.pCalendar .popup_calendar_box .view_month table.table_calendar th.first{background:none;}
+.pCalendar .popup_calendar_box .view_month table.table_calendar td{background:#fff;text-align:right;padding-right:5px;padding-top:5px;}
+.pCalendar .popup_calendar_box .view_month table.table_calendar td a.selected{background:#a3b6d0;color:#fff;padding:2px}
