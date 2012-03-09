@@ -46,10 +46,17 @@ define('FOPEN_READ_WRITE_CREATE_STRICT',		'x+b');
 $base_url	= "http://".$_SERVER['HTTP_HOST'];
 $base_url .= str_replace(basename($_SERVER['SCRIPT_NAME']), "", $_SERVER['SCRIPT_NAME']);
 
-define('BASE_URL', $base_url);
-define('IMG_DIR', $base_url.'/images');
-define('CSS_DIR', $base_url.'/css');
-define('JS_DIR', $base_url.'/jquery');
+define('BASE_URL', $base_url."index.php/");
+define('IMG_DIR', $base_url.'images');
+define('CSS_DIR', $base_url.'css');
+define('JS_DIR', $base_url.'js');
+
+// 개발 모드중인지 여부
+define('DEBUG_MODE', false);
+
+//
+define('SALT', '206869');
+
 
 /* End of file constants.php */
 /* Location: ./application/config/constants.php */

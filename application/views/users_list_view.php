@@ -12,19 +12,19 @@
                             <input type="hidden" value="<?php echo $startDate; ?>" id="tmpStartDate" />
                             <input type="hidden" value="<?php echo $endDate; ?>" id="tmpEndDate" />
     						<table cellpadding="0" cellspacing="0" class="table01 tablesorter" >
-    								  <col width="25%" />
-    								  <col width="25%" />
-    								  <col width="25%" />
-    								  <col width="25%" />
+    							  <col width="25%" />
+    							  <col width="25%" />
+    							  <col width="25%" />
+    							  <col width="25%" />
     							<tbody>
     								<tr>
-    									<th>시작날짜</th>
+    									<th>가입시작날짜</th>
     									<td>
-    										<input value="" type="text"  id="startDate" name="startDate" alt="시작날짜" />
+    										<input value="" type="text"  id="startDate" name="startDate" alt="가입시작날짜" />
     									</td>
-    									<th>종료날짜</th>
+    									<th>가입종료날짜</th>
     									<td>
-    										<input value="" type="text"  id="endDate" name="endDate" alt="종료날짜" />
+    										<input value="" type="text"  id="endDate" name="endDate" alt="가입종료날짜" />
     									</td>
     								</tr>    
                                     <!--                        

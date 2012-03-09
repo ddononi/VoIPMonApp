@@ -4,11 +4,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title><?php echo $this->config->item('title'); ?></title>
 <link rel="stylesheet" type="text/css" href="<?=CSS_DIR?>/default.css" />
+
 <script language="javascript" src="<?=JS_DIR?>/jquery-1.7.1.min.js"></script>
 <link rel="stylesheet" href="http://code.jquery.com/qunit/git/qunit.css" type="text/css" media="screen" />
 <script type="text/javascript" src="http://code.jquery.com/qunit/git/qunit.js"></script> 
-<!-- UI Tools: Tabs, Tooltip, Scrollable and Overlay (4.45 Kb) -->
-<script src="http://cdn.jquerytools.org/1.2.6/tiny/jquery.tools.min.js"></script>
+<!-- UI Tools  -->
+<script src="<?=JS_DIR?>/jquery.tools.min.js"></script>
 <style>
 /* tooltip styling */
 .tooltip {
@@ -47,17 +48,20 @@
 					<h1><a href="#"><img src="<?=IMG_DIR?>/logo.jpg" width="122" height="43" alt="active ice" /></a></h1>
 					<div class="gnbMenu">
 								<span>홍길동님 반갑습니다</span>
-								<a href="#" class="on"><img src="<?=IMG_DIR?>/btn_logout.gif" width="56" height="20" alt="로그아웃" /></a>
+								<a href="../auth/login" class="on"><img src="<?=IMG_DIR?>/btn_logout.gif" width="56" height="20" alt="로그아웃" /></a>
 								<a href="#"><img src="<?=IMG_DIR?>/btn_info.gif" width="56" height="20" alt="정보변경" /></a>
 								<a href="#"><img src="<?=IMG_DIR?>/btn_dataOn.gif" width="56" height="20" alt="통계" /></a>
 					</div>
 			</div>
 			<div class="lnb">
 				<ul class="lnbMenu">
-					<li><a href="#">통계</a></li>
-					<li><a href="#">모니터링</a></li>
+                    <li><a href="<?=BASE_URL?>rec_mon/rec_list">검색</a></li>
+					<li><a href="<?=BASE_URL?>rec_mon/rec_statistics">통계</a></li>
+					<li><a href="<?=BASE_URL?>rec_mon/monitering">모니터링</a></li>
+                <?php if ($this->session->userdata('logged_in') !== TRUE  OR  $this->session->userdata('user_level') === 's'): ?>
+                    <li><a href="<?=BASE_URL?>auth/register_view">회원등록</a></li>
+                    <li><a href="<?=BASE_URL?>auth/users_list">회원리스트</a></li>
+                <?php endif; ?>
 				</ul>
 			</div>
-			<div class="img"><img src="<?=IMG_DIR?>/img.jpg" width="778" height="181" alt="img" /></div>
-	
 	</div>

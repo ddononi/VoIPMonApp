@@ -1,4 +1,7 @@
 	<div id="container">
+  			<div style="text-align: center;" class="img">
+              <img src="<?=IMG_DIR?>/img.jpg" width="778" height="181" alt="img" />
+            </div>     
 			<div class="content01">
 				<div class="content01Menu">
 					<!-- STYSTEM 01 현황 -->

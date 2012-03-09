@@ -5,17 +5,17 @@
 <title><?php echo $this->config->item('vr_title'); ?></title>
 <link rel="stylesheet" type="text/css" href="<?=CSS_DIR?>/login.css" />
 <script language="javascript" src="<?=JS_DIR?>/jquery-1.7.1.min.js"></script>
-<script src="http://cdn.jquerytools.org/1.2.6/tiny/jquery.tools.min.js"></script>
+<script language="javascript" src="<?=JS_DIR?>/jquery.tools.min.js"></script>
 </head>
 <body>
 
 <?php echo validation_errors(); ?>
  <div id="login">
-   <?=form_open('login/loginProcess')?>
+   <?=form_open('auth/loginProcess')?>
     	<ul class="loginBox">
     		<li><input type="text" maxlength="10" id="user_id" name="user_id" value="<?php echo set_value('user_id'); ?>" /></li>
     		<li><input type="password" maxlength="10" id="user_pwd" name="user_pwd" value="" /></li>
-    		<li><img id="login_btn" src="<?=IMG_DIR?>/main_btnLogin.gif" width="71" height="48" alt="로그인" /></li>
+    		<li><img id="login_btn" style="cursor: pointer;" src="<?=IMG_DIR?>/main_btnLogin.gif" width="71" height="48" alt="로그인" /></li>
     	</ul>
     <?=form_close()?>
  </div>
@@ -24,6 +24,19 @@
  <script  type="text/javascript">
  $(function(){
      var ENTER_KEY = 13;   // Enter  keycode 값
+     
+     // inoput 항목에 stand out 효과 주기
+     /*
+	$("#user_id, #user_pwd").bind("click keydown",function() {
+		// perform exposing for the clicked element
+		$(this).expose({
+		  color : '#ccc',
+          opacity : 0.6
+		});  
+
+	});
+    */     
+     
      // 전송전 로그인필드 검증 처리
      $("#login_btn").click(function(){
         /*
